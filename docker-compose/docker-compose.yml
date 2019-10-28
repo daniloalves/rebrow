@@ -1,0 +1,14 @@
+version: '3'
+services:
+  redis-manager:
+    image: redis-manager:latest
+    env_file: docker-compose.env
+    links:
+      - redis
+    ports:
+      - "5300:53"
+  redis:
+    env_file: docker-compose.env
+    image: redis:latest
+    ports:
+      - "6379:6379"
