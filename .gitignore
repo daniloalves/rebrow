@@ -1,6 +1,9 @@
 venv/
 env/
 
+# IDE
+.vscode/
+
 # Secrets
 docker-compose.env
 
